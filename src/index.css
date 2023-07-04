@@ -1,0 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;0,600;1,300;1,700&family=Poppins:wght@500;600;700;800&family=Roboto:wght@500;700;900&family=Ubuntu:wght@500;700&family=Work+Sans:wght@400;500;700&family=Yeseva+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
