@@ -22,11 +22,31 @@ const App = () => {
             <Hero />
           </div>
         </div>
-        <Partners />
-        <Services />
-        <Feedback />
-        <News />
-        <Footer />
+        <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+          <div className={`${styles.boxWidth}`}>
+            <Partners />
+          </div>
+        </div>
+        <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+          <div className={`${styles.boxWidth}`}>
+            <Services />
+          </div>
+        </div>
+        <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+          <div className={`${styles.boxWidth}`}>
+            <Feedback />
+          </div>
+        </div>
+        <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+          <div className={`${styles.boxWidth}`}>
+            <News />
+          </div>
+        </div>
+        <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+          <div className={`${styles.boxWidth}`}>
+            <Footer />
+          </div>
+        </div>
       </div>
     </>
   );

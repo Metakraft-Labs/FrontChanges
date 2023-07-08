@@ -9,17 +9,16 @@ const Navbar = () => {
       <nav className={`${styles.flexCenter} flex-row text-white w-full`}>
         {/* ---------------Nav Text--------------- */}
         <div>
-          <p className={`${styles.text1}`}>Blockwhip</p>
+          <p className={`${styles.text1} text-[2.25rem]`}>Blockwhip</p>
         </div>
         {/* ---------------Nav Links---------------- */}
         <div className={`${styles.flexEnd} w-full`}>
-          <ul className={`${styles.flexCenter}`}>
+          <ul className={`${styles.flexCenter} xs:hidden ss:hidden sm:hidden `}>
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={` ${styles.linkText} px-6`}
-              >
-                <a href={`#${nav.id}`} className={`hover:underline hover:text-secondary hover:underline-offset-[20px] hover:decoration-secondary `}>{nav.title}</a>
+                className={` ${styles.linkText} px-6`}>
+                <a href={`#${nav.id}`} className={`hover:underline hover:text-secondary hover:underline-offset-[20px] hover:decoration-secondary transition duration-300 ease-in-out`}>{nav.title}</a>
               </li>
             ))}
           </ul>
