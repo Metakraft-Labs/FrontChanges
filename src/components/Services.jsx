@@ -44,7 +44,7 @@ const Services = () => {
 
         {/* --------------------------------------------------------------------------------------- */}
         <div
-          className={`${styles.flexCenter} p-14 xs:p-6 ss:p-6 sm:p-8 xs:flex-col ss:flex-col sm:flex-col text-white border-[1px] border-white/[17%] rounded-[1.25rem]`}
+          className={`${styles.flexCenter} mt-24  p-14 xs:p-6 ss:p-6 sm:p-8 xs:flex-col ss:flex-col sm:flex-col text-white border-[1px] border-white/[17%] rounded-[1.25rem]`}
         >
           <div
             className={`border-[1px] w-[50%] xs:w-full ss:w-full sm:w-full p-12 xs:p-6 ss:p-6 sm:p-8 border-secondary rounded-[1.25rem]`}
@@ -57,14 +57,14 @@ const Services = () => {
           </div>
           <div className={`${styles.flexStart} xs:flex-col ss:flex-col`}>
             {/* ------------------------------------------------------------ */}
-            <div className={`${styles.padding} xs:pb-0 ss:pb-0 px-8 ss:px-6 sm:px-6  `}>
+            <div className={`${styles.padding} xs:pb-0 ss:pb-0 px-8 pr-0 ss:px-6 sm:px-6  `}>
               <div className={`${styles.flexCenter} `}>
                 <div>
                   <div
                     className={`shadow-box2 w-[3rem] h-[3rem] rounded-full`}
                   />
                 </div>
-                <div className={`p-4`}>
+                <div className={`p-2 ml-4`}>
                   <h3
                     className={`${styles.text1} text-[1.375rem]  font-semibold`}
                   >
@@ -75,33 +75,13 @@ const Services = () => {
                   </p>
                 </div>
               </div>
-              <div className={`${styles.flexCenter} `}>
-                <div>
-                  <div
-                    className={`shadow-box2 w-[3rem] h-[3rem] rounded-full`}
-                  />
-                </div>
-                <div className={`p-4`}>
-                  <h3
-                    className={`${styles.text1} text-[1.375rem]  font-semibold`}
-                  >
-                    Versatile Technology
-                  </h3>
-                  <p className={`pt-4 text-white/[54%]`}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  </p>
-                </div>
-              </div>
-            </div>
-            {/* ---------------------------------------------------------- */}
-            <div className={`${styles.padding} xs:pt-0 ss:pt-0 sm:px-0 px-8 `}>
               <div className={`${styles.flexCenter}`}>
                 <div>
                   <div
                     className={`shadow-box2 w-[3rem] h-[3rem] rounded-full`}
                   />
                 </div>
-                <div className={`p-4`}>
+                <div className={`p-2  ml-4`}>
                   <h3
                     className={`${styles.text1} text-[1.375rem]  font-semibold`}
                   >
@@ -112,13 +92,34 @@ const Services = () => {
                   </p>
                 </div>
               </div>
+              
+            </div>
+            {/* ---------------------------------------------------------- */}
+            <div className={`${styles.padding} xs:pt-0 ss:pt-0 sm:px-0 px-8 `}>
+            <div className={`${styles.flexCenter} `}>
+                <div>
+                  <div
+                    className={`shadow-box2 w-[3rem] h-[3rem] rounded-full`}
+                  />
+                </div>
+                <div className={`p-2  ml-4`}>
+                  <h3
+                    className={`${styles.text1} text-[1.375rem]  font-semibold`}
+                  >
+                    Versatile Technology
+                  </h3>
+                  <p className={`pt-4 text-white/[54%]`}>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>         
               <div className={`${styles.flexCenter}`}>
                 <div>
                   <div
                     className={`shadow-box2 w-[3rem] h-[3rem] rounded-full`}
                   />
                 </div>
-                <div className={`p-4`}>
+                <div className={`p-2 ml-4`}>
                   <h3
                     className={`${styles.text1} text-[1.375rem] font-semibold`}
                   >

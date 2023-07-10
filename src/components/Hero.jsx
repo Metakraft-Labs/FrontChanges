@@ -7,7 +7,7 @@ import heroBg from "../assets/heroBg.png";
 const Hero = () => {
   return (
     <section id="home"
-      className={`${styles.flexCenter} ${styles.marginY} flex-row flex-1 xs:flex-col  ss:flex-col sm:flex-col justify-between text-white w-full`}
+      className={`${styles.flexCenter} ${styles.paddingY} flex-row flex-1 xs:flex-col  ss:flex-col sm:flex-col justify-between text-white w-full`}
     >
       {/* ---------------------------Left Section-------------------------------- */}
       <div

@@ -4,7 +4,7 @@ import styles from "../style";
 const Feedback = () => {
   return (
     <>
-      <div className={``}>
+      <div className={`${styles.paddingY}`}>
         <div
           className={`text-white flex flex-row justify-between xs:flex-col ss:flex-col sm:flex-col md:flex-col`}
         >

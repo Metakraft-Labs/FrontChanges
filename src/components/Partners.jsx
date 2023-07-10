@@ -12,7 +12,7 @@ import recharge from "../assets/recharge.png";
 const Partners = () => {
   return (
     <>
-      <section id="pages" className={`${styles.marginY} pt-24 xs:pt-0 `}>
+      <section id="pages" className={`${styles.paddingY } pt-24 xs:pt-0 `}>
         <div
           className={`text-white ${styles.flexCenter} xs:flex-col ss:flex-col sm:flex-col`}
         >

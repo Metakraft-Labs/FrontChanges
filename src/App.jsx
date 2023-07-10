@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./style";
 import Navbar from "./components/Navbar";
+import Metaverse from "./components/Metaverse";
 import Hero from "./components/Hero";
 import Partners from "./components/Partners";
 import Services from "./components/Services";
@@ -25,6 +26,11 @@ const App = () => {
         <div className={`${styles.paddingX} ${styles.flexCenter}`}>
           <div className={`${styles.boxWidth}`}>
             <Partners />
+          </div>
+        </div>
+        <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+          <div className={`${styles.boxWidth}`}>
+            <Metaverse />
           </div>
         </div>
         <div className={`${styles.paddingX} ${styles.flexCenter}`}>
