@@ -9,9 +9,9 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 const Footer = () => {
   return (
     <>
-      <div className={`text-white divide-y-2 divide-white/[17%] `}>
+      <section id="contact" className={`text-white divide-y-2 divide-white/[17%] `}>
         {/* -------------------------Section 1----------------------- */}
-        <div className={`flex justify-between items-start xs:flex-col ss:flex-col ${styles.paddingY}`}>
+        <div className={`flex justify-between items-start xs:flex-col ss:flex-col `}>
           <div className={``}>
             <h2 className={`${styles.heading2} text-[2.25rem]`}>Blockwhip</h2>
             <p className={`${styles.paddingY} xs:pl-0 xs:py-6 ss:pl-0 ss:py-6 text-white/[54%]`}>
@@ -62,7 +62,7 @@ const Footer = () => {
             </div>
           </div>
           <div className={`${styles.paddingY} xs:py-0 ss:py-0`}></div>
-        </div></div>
+        </div></section>
     </>
   );
 };
