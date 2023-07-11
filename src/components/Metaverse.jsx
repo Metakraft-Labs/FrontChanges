@@ -9,7 +9,7 @@ const Metaverse = () => {
       <div  className={`${styles.paddingY} pb-5`}>
         <div>
           <div className={`flex flex-col `}>
-            <h2 className={`${styles.heading2} text-[96px] ss:text-[72px] sm:text-[72px] md:text-[82px] ss:leading-[90px] sm:leading-[90px] leading-[96px]`}>
+          <h2 className={`${styles.heading2} text-[96px]  leading-[96px]`}>
               <span className={`${styles.textGradient}`}>
                 Boost Your Product Sales
               </span>
@@ -24,7 +24,7 @@ const Metaverse = () => {
         </div>
         <div className={`${styles.paddingY}`}>
           <div className={`flex flex-col `}>
-            <h2 className={`${styles.heading2}  text-[96px] ss:text-[72px] sm:text-[72px] md:text-[82px] ss:leading-[90px] sm:leading-[90px] leading-[96px]`}>
+            <h2 className={`${styles.heading2} text-[96px] leading-[96px] `}>
               <span className={`${styles.textGradient} `}>
                 Enterprise AR/VR Solutions
               </span>

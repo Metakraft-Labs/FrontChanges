@@ -15,7 +15,7 @@ const Footer = () => {
           <div className={``}>
             <h2 className={`${styles.heading2} text-[2.25rem]`}>Blockwhip</h2>
             <p className={`${styles.paddingY} xs:pl-0 xs:py-6 ss:pl-0 ss:py-6 text-white/[54%]`}>
-              Blockwhip is sit amet consec adipiscing elit <br /> sed do eiusmod tempor
+              Blockwhip is sit amet consec adipiscing elit <br className={`xs:hidden`} /> sed do eiusmod tempor
               incididunt.
             </p>
           </div>
@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
         </div>
         {/* -------------------Section 2----------------------- */}
-        <div className={`divide-y-2 divide-white/[17%] mt-4`}>
+        <div className={`divide-y-2 divide-white/[17%] my-12`}>
           <div className={`${styles.text1} xs:flex-col xs:${styles.flexCenter} ss:flex-col ss:${styles.flexCenter}  font-semibold  text-white flex justify-between items-start ${styles.paddingY} xs:py-4`}>
             <div className={`text-center`}>
               <h3 className={`text-[1.25rem]`}>Follow Us</h3>
@@ -50,14 +50,14 @@ const Footer = () => {
                 <a href="#"><TwitterIcon /></a>
               </div>
             </div>
-            <div className={`${styles.flexCenter} flex-col xs:pt-8 ss:pt-8 sm:pt-8`}>
+            <div className={`${styles.flexCenter} flex-col xs:pt-4 ss:pt-6 sm:pt-8`}>
               <h3 className={`text-[1.25rem]`}>Subscribe Our Newsletter</h3>
               <div className={`rounded-full my-6 ${styles.flexCenter} px-4 py-2 bg-[#ffffff0d] border-[#a5d3ff36] border-[1px] w-fit`}>
-                <input type="text" name="newsletter" id="" placeholder="Your Email Address" className={` text-[1rem] bg-transparent font-light`} />
-                <button className={`shadow-btnLink ${styles.button} font-semibold text-[1rem]`}>Subscribe</button>
+                <input type="text" name="newsletter" id="" placeholder="Your Email Address" className={`text-[16px] xs:text-[14px] bg-transparent font-light`} />
+                <button className={`shadow-btnLink ${styles.button} font-semibold text-[16px] xs:text-[14px]`}>Subscribe</button>
               </div>
             </div>
-            <div className={`xs:pt-8 ss:pt-8`}>
+            <div className={`xs:pt-4 ss:pt-6`}>
               <h3 className={`text-[1.25rem]`}>Payments</h3>
             </div>
           </div>

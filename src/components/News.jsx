@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../style";
+import {motion} from "framer-motion"
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 const News = () => {
@@ -23,13 +24,13 @@ const News = () => {
               <span className={`${styles.textGradient}`}>and Articles</span>
             </h2>
           </div>
-          <div className={` ${styles.flexCenter} xs:mt-12 ss:mt-12 sm:mt-12`}>
-            <button
+          <div className={`flex items-center justify-center  xs:justify-start ss:mt-12 sm:mt-12`}>
+            <motion.button  initial={{opacity: 0}} animate={{opacity: 1}} transition={{ type: 'spring', delay:0.5, duration: 2 }}
               className={`${styles.button} ${styles.flexCenter} xs:my-8 ss:my-8 md:my-12 shadow-btnLink text-[100%]`}
             >
               View All News
               <div className="bg-white rounded-full border-[1px] inline-flex w-[24px] h-[24px] border-white ml-4"></div>
-            </button>
+            </motion.button>
           </div>
         </div>
         <div
@@ -40,11 +41,11 @@ const News = () => {
             className={`p-10 xs:p-6 ss:p-6 sm:p-6 xs:m-6 ss:m-6 sm:m-8 m-8 mr-0 basis-[50%] border-white border-[1px] rounded-[20px]`}
           >
             <div className={`flex flex-col items-start`}>
-              <button
+              <motion.button  initial={{opacity: 0}} animate={{opacity: 1}} transition={{ type: 'spring', delay:0.5, duration: 2 }}
                 className={`${styles.text1} font-semibold p-2 px-6 text-[16px] border-[1px] border-secondary rounded-full`}
               >
                 Insight
-              </button>
+              </motion.button>
               <h3 className={`${styles.text1} pt-4 text-[28px] leading-8`}>
                 Designing Experiences: How VR Services Redefine User Interaction
               </h3>
@@ -52,11 +53,11 @@ const News = () => {
           </div>
           {/* ------------------------------Second Column---------------------------------------- */}
           <div className={``}>
-            <div className={`flex flex-row p-8 sm:p-6`}>
+            <div className={`flex flex-row xs:flex-col p-8  xs:p-6  sm:p-6`}>
               <div
                 className={`p-10 basis-[25%] border-white border-[1px] rounded-[20px]`}
               ></div>
-              <div className={`pl-4`}>
+              <div className={`pl-4 xs:mt-4 xs:px-0`}>
                 <h3 className={`${styles.text1} text-[20px] font-semibold`}>
                   Enhancing Engagement: Unleashing the Benefits of VR Services
                 </h3>
@@ -69,11 +70,11 @@ const News = () => {
                 </p>
               </div>
             </div>
-            <div className={`flex flex-row p-8 sm:p-6`}>
+            <div className={`flex flex-row xs:flex-col p-8 xs:p-6 sm:p-6`}>
               <div
                 className={`p-10 basis-[25%] border-white border-[1px] rounded-[20px]`}
               ></div>
-              <div className={`pl-4`}>
+              <div className={`pl-4 xs:mt-4 xs:px-0`}>
                 <h3 className={`${styles.text1} text-[20px] font-semibold`}>
                   Enhancing Engagement: Unleashing the Benefits of VR Services
                 </h3>
@@ -86,11 +87,11 @@ const News = () => {
                 </p>
               </div>
             </div>
-            <div className={`flex flex-row p-8 xs:p-6 ss:p-6 sm:p-6`}>
+            <div className={`flex flex-row xs:flex-col p-8 xs:p-6 sm:p-6`}>
               <div
                 className={`p-10 basis-[25%] border-white border-[1px] rounded-[20px]`}
               ></div>
-              <div className={`pl-4`}>
+              <div className={`pl-4 xs:mt-4 xs:px-0`}>
                 <h3 className={`${styles.text1} text-[20px] font-semibold`}>
                   Enhancing Engagement: Unleashing the Benefits of VR Services
                 </h3>
