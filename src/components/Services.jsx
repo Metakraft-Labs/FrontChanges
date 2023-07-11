@@ -57,7 +57,7 @@ const Services = () => {
           </div>
           <div className={`${styles.flexStart} xs:flex-col ss:flex-col`}>
             {/* ------------------------------------------------------------ */}
-            <div className={`${styles.padding} xs:pb-0 ss:pb-0 px-8 pr-0 ss:px-6 sm:px-6  `}>
+            <div className={`${styles.padding} xs:pb-0 ss:pb-0 px-8 pr-0 xs:px-2 ss:px-2 sm:px-2  `}>
               <div className={`${styles.flexCenter} `}>
                 <div>
                   <div
@@ -95,7 +95,7 @@ const Services = () => {
               
             </div>
             {/* ---------------------------------------------------------- */}
-            <div className={`${styles.padding} xs:pt-0 ss:pt-0 sm:px-0 px-8 `}>
+            <div className={`${styles.padding} xs:pt-0 ss:pt-0 xs:px-2 ss:px-2 sm:px-2 px-8 `}>
             <div className={`${styles.flexCenter} `}>
                 <div>
                   <div

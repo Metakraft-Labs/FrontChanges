@@ -2,7 +2,7 @@ const styles = {
     boxWidth: "xl:max-w-[1280px] w-full",
   
     // heading2: "font-Manrope font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
-    heading2: "text-[64px] xs:text-[46px] font-Manrope font-bold leading-[70.4px] xs:leading-[54px] w-full",
+    heading2: "text-[64px] font-Manrope font-bold leading-[70.4px] xs:leading-[54px] w-full",
     head3: "text-secondary font-Manrope font-[18px] font-semibold leading-[18px] tracking-[3px] uppercase",
     text1: " font-Manrope font-bold",
     linkText: "text-[20px] font-Manrope font-medium leading-[16px]",

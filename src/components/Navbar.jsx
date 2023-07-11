@@ -3,8 +3,6 @@ import { navLinks } from "../constants";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import styles from "../style";
-import Icon from "../assets/icon.png"
-import { Menu } from "@mui/material";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);

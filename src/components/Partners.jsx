@@ -27,10 +27,7 @@ const Partners = () => {
           </div>
           <div className={`basis-[55%]`}>
             <p className={`text-white/[54%] xs:pt-6 ss:pt-6 sm:pt-6 `}>
-              <b>Blockwhip</b> is Lorem ipsum dolor sit amet consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam quis nostrud tempor
-              dolore adispa dolore magna consecteur labore.
+              <b>Blockwhip</b> is a metaverse and blockchain development studio based in Bangalore, India. We’re a team of developers, designers, artists and visionaries who help brands step into the world of virtual & augmented reality.
             </p>
           </div>
         </div>
