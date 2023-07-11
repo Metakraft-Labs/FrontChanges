@@ -61,7 +61,7 @@ const Footer = () => {
               <h3 className={`text-[1.25rem]`}>Payments</h3>
             </div>
           </div>
-          <div className={`${styles.paddingY} xs:py-0 ss:py-0`}></div>
+          <div className={`py-4 xs:py-0 ss:py-0`}></div>
         </div></section>
     </>
   );

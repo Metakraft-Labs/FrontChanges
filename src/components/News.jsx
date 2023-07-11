@@ -33,7 +33,7 @@ const News = () => {
           </div>
         </div>
         <div
-          className={`${styles.marginY} flex flex-row xs:flex-col ss:flex-col sm:flex-col rounded-3xl border-[#ffffff2b] border-[1px] p-4 sm:p-2 w-full`}
+          className={`${styles.marginY} flex flex-row xs:flex-col ss:flex-col sm:flex-col rounded-3xl border-[#ffffff2b] border-[1px] p-4 xs:p-1 ss:p-2 sm:p-2 w-full`}
         >
           {/* ------------------------------First Column---------------------------------------- */}
           <div
@@ -45,7 +45,7 @@ const News = () => {
               >
                 Insight
               </button>
-              <h3 className={`${styles.heading2} pt-4 text-[28px] leading-8`}>
+              <h3 className={`${styles.text1} pt-4 text-[28px] leading-8`}>
                 Designing Experiences: How VR Services Redefine User Interaction
               </h3>
             </div>
