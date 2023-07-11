@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../style";
+import {motion} from "framer-motion"
 import flash from "../assets/flash.png";
 import nextmove from "../assets/nextmove.png";
 import hitech from "../assets/hitech.png";
@@ -94,8 +95,8 @@ const Partners = () => {
           <div
             className={`flex justify-between xs:flex-col ss:flex-col w-full`}
           >
-            <div className={`${styles.flexCenter} `}>
-              <div>
+            <div className={`${styles.flexCenter} xs:flex-col`}>
+              <div className={`xs:mb-4`}>
                 <h3
                   className={`text-white text-[250%] font-bold ${styles.flexStart}`}
                 >
@@ -107,7 +108,7 @@ const Partners = () => {
                   Satisfied Clients
                 </p>
               </div>
-              <div className={`mx-12`}>
+              <div className={`mx-12 xs:mb-4`}>
                 <h3
                   className={`text-white text-[250%] font-bold ${styles.flexStart}`}
                 >
@@ -131,12 +132,12 @@ const Partners = () => {
               </div>
             </div>
             <div className={` ${styles.flexCenter} xs:my-12 ss:my-12`}>
-              <button
+              <motion.button  initial={{opacity: 0}} animate={{opacity: 1}} transition={{ type: 'spring', delay:0.5, duration: 2 }}
                 className={`${styles.button} ${styles.flexCenter} shadow-btnLink text-[100%]`}
               >
                 Explore More
                 <div className="bg-white rounded-full border-[1px] inline-flex w-[24px] h-[24px] border-white ml-4"></div>
-              </button>
+              </motion.button>
             </div>
           </div>
         </div>

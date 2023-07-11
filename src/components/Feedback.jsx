@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../style";
+import {motion} from "framer-motion"
 
 const Feedback = () => {
   return (
@@ -22,13 +23,13 @@ const Feedback = () => {
               <span className={`${styles.textGradient}`}>From Our Clients</span>
             </h2>
           </div>
-          <div className={` ${styles.flexCenter} xs:mt-12 ss:mt-12 sm:mt-12`}>
-            <button
+          <div className={` flex items-center justify-center  xs:justify-start ss:mt-12 sm:mt-12`}>
+            <motion.button  initial={{opacity: 0}} animate={{opacity: 1}} transition={{ type: 'spring', delay:0.5, duration: 2 }}
               className={`${styles.button} ${styles.flexCenter} xs:my-8 ss:my-8 md:my-12 shadow-btnLink text-[100%]`}
             >
               Our Feedback
               <div className="bg-white rounded-full border-[1px] inline-flex w-[24px] h-[24px] border-white ml-4"></div>
-            </button>
+            </motion.button>
           </div>
         </div>
           <div
