@@ -1,5 +1,4 @@
 import React from "react";
-// import * as THREE from 'three';
 import styles from "../style";
 import heroImage from "../assets/heroImage.png";
 import heroBg from "../assets/heroBg.png";

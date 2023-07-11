@@ -4,6 +4,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import styles from "../style";
 import Icon from "../assets/icon.png"
+import { Menu } from "@mui/material";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -26,7 +27,7 @@ const Navbar = () => {
             ))}
           </ul>
           <div className={`rounded-full border-[1px] border-secondary p-2 ml-6 xs:hidden ss:hidden `}>
-            <img src={Icon} alt="toggle_image" />
+          <MenuIcon className={``}/>
           </div>
           <div className={`sm:hidden md:hidden lg:hidden xl:hidden mx-4 border-[1px] border-white/50 rounded-full p-2 `} onClick={() => setToggle((prev) => !prev)}>
             {toggle ? <CloseIcon className={``}/> : <MenuIcon className={``}/>}
