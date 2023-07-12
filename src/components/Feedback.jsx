@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../style";
 import {motion} from "framer-motion"
+import { navVariants } from "../../utils/motion";
 
 const Feedback = () => {
   return (
@@ -24,7 +25,7 @@ const Feedback = () => {
             </h2>
           </div>
           <div className={` flex items-center justify-center  xs:justify-start ss:mt-12 sm:mt-12`}>
-            <motion.button  initial={{opacity: 0}} animate={{opacity: 1}} transition={{ type: 'spring', delay:0.5, duration: 2 }}
+            <motion.button  whileInView="show" initial="hidden" variants={navVariants}
               className={`${styles.button} ${styles.flexCenter} xs:my-8 ss:my-8 md:my-12 shadow-btnLink text-[100%]`}
             >
               Our Feedback

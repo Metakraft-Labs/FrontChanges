@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import styles from "../style";
 import { motion } from "framer-motion";
+import { navVariants } from "../../utils/motion";
 import { data } from "../constants/index";
 
 const Services = () => {
-  const [readMore, setReadMore] = useState(false);
+  const [readMore, setReadMore] = useState(true);
 
   return (
     <>
-      <section id="services" className={`${styles.paddingY}`}>
+      <section id="services" className={`${styles.marginY}`}>
         <div
           className={`text-white flex flex-row justify-between xs:flex-col ss:flex-col sm:flex-col md:flex-col`}
         >
@@ -29,7 +30,7 @@ const Services = () => {
           <div
             className={` flex items-center justify-center  xs:justify-start ss:mt-12 sm:mt-12`}
           >
-            <motion.button  initial={{opacity: 0}} animate={{opacity: 1}} transition={{ type: 'spring', delay:0.5, duration: 2 }}
+            <motion.button whileInView="show" initial="hidden" variants={navVariants}
               className={`${styles.button} ${styles.flexCenter} xs:my-8 ss:my-8 md:my-12 shadow-btnLink text-[100%]`}
             >
               View All Services
@@ -69,7 +70,7 @@ const Services = () => {
             ))}
           </div>
           <div className={`flex justify-end`}>
-            <motion.button  initial={{opacity: 0}} animate={{opacity: 1}} transition={{ type: 'spring', delay:0.5, duration: 2 }}
+            <motion.button whileInView="show" initial="hidden" variants={navVariants}
               className={`${styles.button} shadow-btnLink`}
               onClick={() => setReadMore(!readMore)}
             >
