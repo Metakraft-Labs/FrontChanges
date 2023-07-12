@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../style";
 import {motion} from "framer-motion"
+import { navVariants } from "../../utils/motion";
 import flash from "../assets/flash.png";
 import nextmove from "../assets/nextmove.png";
 import hitech from "../assets/hitech.png";
@@ -132,7 +133,7 @@ const Partners = () => {
               </div>
             </div>
             <div className={` ${styles.flexCenter} xs:my-12 ss:my-12`}>
-              <motion.button  initial={{opacity: 0}} animate={{opacity: 1}} transition={{ type: 'spring', delay:0.5, duration: 2 }}
+              <motion.button whileInView="show" initial="hidden" variants={navVariants}
                 className={`${styles.button} ${styles.flexCenter} shadow-btnLink text-[100%]`}
               >
                 Explore More

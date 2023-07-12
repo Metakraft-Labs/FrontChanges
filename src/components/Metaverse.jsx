@@ -6,7 +6,7 @@ import metaImage2 from "../assets/metaImage2.png";
 const Metaverse = () => {
   return (
     <>
-      <div  className={`${styles.paddingY} pb-5`}>
+      <div  className={`${styles.marginY} pb-5`}>
         <div>
           <div className={`flex flex-col `}>
           <h2 className={`${styles.heading2} text-[96px]  leading-[96px]`}>
