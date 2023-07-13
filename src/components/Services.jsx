@@ -9,26 +9,26 @@ const Services = () => {
 
   return (
     <>
-      <section id="services" className={`${styles.marginY}`}>
+      <section id="services" className={``}>
         <div
-          className={`text-white flex flex-row justify-between xs:flex-col ss:flex-col sm:flex-col md:flex-col`}
+          className={`text-white ss:text-center flex flex-row justify-between xs:flex-col ss:flex-col sm:flex-col`}
         >
           <div
-            className={`flex flex-row basis-[45%] md:basis-[100%] lg:basis-[60%] xl:basis-[55%] xs:flex-col ss:flex-col `}
+            className={`flex xs:text-center ss:text-center sm:text-center flex-row basis-[45%] md:basis-[65%] lg:basis-[60%] xl:basis-[55%] xs:flex-col ss:flex-col sm:flex-col `}
           >
             <p
-              className={`${styles.head3} -rotate-90 xs:rotate-0 ss:rotate-0 leading-[100px] xs:leading-[50px] ss:leading-[50px] ss:pt-6 `}
+              className={`${styles.head3} -rotate-90 xs:rotate-0 ss:rotate-0 sm:rotate-0 leading-[100px] xs:leading-[50px] ss:leading-[50px] sm:leading-[50px] ss:pt-6 `}
             >
               Services
             </p>
             <h2 className={`${styles.heading2}`}>
-              <span className={`${styles.textGradient}`}>Discover Our</span>{" "}
+              <span className={`${styles.textGradient} xs:text-white`}>Discover Our</span>{" "}
               <br />
               <span className={`${styles.textGradient}`}>Best VR Projects</span>
             </h2>
           </div>
           <div
-            className={` flex items-center justify-center  xs:justify-start ss:mt-12 sm:mt-12`}
+            className={` flex items-center justify-center ss:mt-12 sm:mt-12`}
           >
             <motion.button whileInView="show" initial="hidden" variants={navVariants}
               className={`${styles.button} ${styles.flexCenter} xs:my-8 ss:my-8 md:my-12 shadow-btnLink text-[100%]`}
@@ -57,7 +57,7 @@ const Services = () => {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen
                 ></iframe>
-                <div className={`text-white my-6`}>
+                <div className={`text-white my-6 xs:text-center xs:mb-0`}>
                   <h3 className={`{styles.text1}  text-[20px] font-semibold`}>
                     {" "}
                     {read.title}{" "}
@@ -69,9 +69,9 @@ const Services = () => {
               </motion.div>
             ))}
           </div>
-          <div className={`flex justify-end`}>
+          <div className={`flex justify-end xs:justify-center`}>
             <motion.button whileInView="show" initial="hidden" variants={navVariants}
-              className={`${styles.button} shadow-btnLink`}
+              className={`${styles.button} shadow-btnLink text-[100%]`}
               onClick={() => setReadMore(!readMore)}
             >
               {readMore ? "Read More" : "Read Less"} { }
@@ -84,7 +84,7 @@ const Services = () => {
           className={`${styles.flexCenter} mt-24  p-14 xs:p-6 ss:p-6 sm:p-8 xs:flex-col ss:flex-col sm:flex-col text-white border-[1px] border-white/[17%] rounded-[1.25rem]`}
         >
           <div
-            className={`border-[1px] w-[50%] xs:w-full ss:w-full sm:w-full p-12 xs:p-6 ss:p-6 sm:p-8 border-secondary rounded-[1.25rem]`}
+            className={`border-[1px] xs:text-center w-[50%] xs:w-full ss:w-full sm:w-full p-12 xs:p-6 ss:p-6 sm:p-8 border-secondary rounded-[1.25rem]`}
           >
             <h3
               className={`text-[34px] xs:text-[30px] xs:leading-[40px] font-bold`}

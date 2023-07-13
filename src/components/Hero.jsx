@@ -35,7 +35,7 @@ const Hero = () => {
             whileInView="show"
             initial="hidden"
             variants={navVariants}
-            className={`shadow-btnLink text-[112.5%] ${styles.button} ${styles.flexCenter}`}
+            className={`shadow-btnLink text-[112.5%] xs:text-[100%] ${styles.button} ${styles.flexCenter}`}
           >
             Explore More
             <div className="bg-white rounded-full border-[1px] inline-flex w-[34px] h-[34px] border-white ml-4"></div>
@@ -59,21 +59,16 @@ const Hero = () => {
         />
         <motion.img
           initial="hide"
-          // animate={{ x: 20 }}
           whileInView="show"
           transition={{ delay: 0.2, type: "spring", stiffness: 20, damping: 6 }}
           variants={{
             hide:{
               opacity: 0,
               scale: 0,
-              y: 0,
-              x: 50,
             },
             show: {
               opacity: 1,
               scale: 1,
-              y: 0,
-              x:20,
               ease: 'easeOut',
             },
           }}

@@ -9,7 +9,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 const Footer = () => {
   return (
     <>
-      <section id="contact" className={`text-white divide-y-2 divide-white/[17%] ${styles.marginY} `}>
+      <section id="contact" className={`text-white divide-y-2 divide-white/[17%] ${styles.paddingY} pb-0 `}>
         {/* -------------------------Section 1----------------------- */}
         <div className={`flex justify-between items-start xs:flex-col ss:flex-col sm:flex-col `}>
           <div className={``}>
