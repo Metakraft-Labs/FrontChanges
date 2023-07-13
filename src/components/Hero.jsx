@@ -62,14 +62,14 @@ const Hero = () => {
           whileInView="show"
           transition={{ delay: 0.2, type: "spring", stiffness: 20, damping: 6 }}
           variants={{
-            hide:{
+            hide: {
               opacity: 0,
               scale: 0,
             },
             show: {
               opacity: 1,
               scale: 1,
-              ease: 'easeOut',
+              ease: "easeOut",
             },
           }}
           src={heroImage}

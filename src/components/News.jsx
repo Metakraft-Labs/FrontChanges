@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../style";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 import { navVariants } from "../../utils/motion";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
@@ -20,13 +20,18 @@ const News = () => {
               OurNews
             </p>
             <h2 className={`${styles.heading2}`}>
-              <span className={`${styles.textGradient} xs:text-white`}>Our Latest News</span>
+              <span className={`${styles.textGradient} xs:text-white`}>
+                Our Latest News
+              </span>
               <br />
               <span className={`${styles.textGradient}`}>and Articles</span>
             </h2>
           </div>
           <div className={`flex items-center justify-center ss:mt-12 sm:mt-12`}>
-            <motion.button  whileInView="show" initial="hidden" variants={navVariants}
+            <motion.button
+              whileInView="show"
+              initial="hidden"
+              variants={navVariants}
               className={`${styles.button} ${styles.flexCenter} xs:my-8 ss:my-8 md:my-12 shadow-btnLink text-[100%]`}
             >
               View All News
@@ -42,7 +47,10 @@ const News = () => {
             className={`p-10 xs:p-6 ss:p-6 sm:p-6 xs:m-6 ss:m-6 sm:m-8 m-8 mr-0 basis-[50%] border-white border-[1px] rounded-[20px]`}
           >
             <div className={`flex flex-col items-start`}>
-              <motion.button  whileInView="show" initial="hidden" variants={navVariants}
+              <motion.button
+                whileInView="show"
+                initial="hidden"
+                variants={navVariants}
                 className={`${styles.text1} font-semibold p-2 px-6 text-[16px] border-[1px] border-secondary rounded-full`}
               >
                 Insight
