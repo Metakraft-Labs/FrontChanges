@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../style";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 import { navVariants } from "../../utils/motion";
 
 const Feedback = () => {
@@ -19,13 +19,20 @@ const Feedback = () => {
               Feedback
             </p>
             <h2 className={`${styles.heading2}`}>
-              <span className={`${styles.textGradient} xs:text-white`}>Real Feedback</span>{" "}
+              <span className={`${styles.textGradient} xs:text-white`}>
+                Real Feedback
+              </span>{" "}
               <br />
               <span className={`${styles.textGradient}`}>From Our Clients</span>
             </h2>
           </div>
-          <div className={` flex items-center justify-center ss:mt-12 sm:mt-12`}>
-            <motion.button  whileInView="show" initial="hidden" variants={navVariants}
+          <div
+            className={` flex items-center justify-center ss:mt-12 sm:mt-12`}
+          >
+            <motion.button
+              whileInView="show"
+              initial="hidden"
+              variants={navVariants}
               className={`${styles.button} ${styles.flexCenter} xs:my-8 ss:my-8 md:my-12 shadow-btnLink text-[100%]`}
             >
               Our Feedback
@@ -33,11 +40,11 @@ const Feedback = () => {
             </motion.button>
           </div>
         </div>
-          <div
-            className={`${styles.marginY} xs:mb-20 rounded-3xl border-[#ffffff2b] border-[1px] p-4 w-full`}
-          >
-            <iframe src="" frameborder="0" className={``} />
-          </div>
+        <div
+          className={`${styles.marginY} xs:mb-20 rounded-3xl border-[#ffffff2b] border-[1px] p-4 w-full`}
+        >
+          <iframe src="" frameborder="0" className={``} />
+        </div>
       </div>
     </>
   );

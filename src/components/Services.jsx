@@ -22,7 +22,9 @@ const Services = () => {
               Services
             </p>
             <h2 className={`${styles.heading2}`}>
-              <span className={`${styles.textGradient} xs:text-white`}>Discover Our</span>{" "}
+              <span className={`${styles.textGradient} xs:text-white`}>
+                Discover Our
+              </span>{" "}
               <br />
               <span className={`${styles.textGradient}`}>Best VR Projects</span>
             </h2>
@@ -30,7 +32,10 @@ const Services = () => {
           <div
             className={` flex items-center justify-center ss:mt-12 sm:mt-12`}
           >
-            <motion.button whileInView="show" initial="hidden" variants={navVariants}
+            <motion.button
+              whileInView="show"
+              initial="hidden"
+              variants={navVariants}
               className={`${styles.button} ${styles.flexCenter} xs:my-8 ss:my-8 md:my-12 shadow-btnLink text-[100%]`}
             >
               View All Services
@@ -41,13 +46,13 @@ const Services = () => {
         {/* ---------------------------------------------------------------- */}
         <div>
           <div
-            className={`flex justify-between flex-row xs:flex-col ss:flex-col sm:flex-wrap md:flex-wrap   ${styles.paddingY} w-full text-white`}
+            className={`carousel carousel-center px-0   ${styles.paddingY} w-full text-white`}
           >
             {data.map((read) => (
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 transition={{ delay: 0.1, duration: 0.3 }}
-                className={`${styles.serviceBox} p-8  xs:my-4 ss:my-6 sm:my-6 md:my-6 w-full xs:w-[100%] ss:w-[100%] sm:w-[45%] md:w-[45%] mr-8 sm:mr-0`}
+                className={`${styles.serviceBox} carousel-item flex flex-col  p-8  xs:my-4 ss:my-6 sm:my-6 md:my-6 w-[26%] lg:w-[27%] sm:w-[38%] ss:w-[87%] xs:w-[75%] mx-4`}
               >
                 <iframe
                   className={`w-full rounded-[1rem]`}
@@ -70,11 +75,14 @@ const Services = () => {
             ))}
           </div>
           <div className={`flex justify-end xs:justify-center`}>
-            <motion.button whileInView="show" initial="hidden" variants={navVariants}
+            <motion.button
+              whileInView="show"
+              initial="hidden"
+              variants={navVariants}
               className={`${styles.button} shadow-btnLink text-[100%]`}
               onClick={() => setReadMore(!readMore)}
             >
-              {readMore ? "Read More" : "Read Less"} { }
+              {readMore ? "Read More" : "Read Less"} {}
             </motion.button>
           </div>
         </div>
