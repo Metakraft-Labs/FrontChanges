@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../style";
+import video1 from "../assets/video1.mp4"
 import {motion} from "framer-motion"
 import { navVariants } from "../../utils/motion";
 import flash from "../assets/flash.png";
@@ -16,18 +17,18 @@ const Partners = () => {
     <>
       <section id="pages" className={`${styles.paddingY } pt-24 xs:pt-0 `}>
         <div
-          className={`text-white ${styles.flexCenter} xs:flex-col ss:flex-col sm:flex-col`}
+          className={`text-white ${styles.flexCenter} xs:text-center ss:text-center sm:text-center xs:flex-col ss:flex-col sm:flex-col`}
         >
-          <div className={`flex flex-row basis-[45%] md:basis-[100%] lg:basis-[60%] xl:basis-[55%] xs:flex-col ss:flex-col`}>
-            <p className={`${styles.head3} -rotate-90 xs:rotate-0 ss:rotate-0 leading-[100px] xs:leading-[50px] ss:leading-[50px]`}>
+          <div className={`flex flex-row basis-[45%] sm:basis-[100%] md:basis-[100%] lg:basis-[60%] xl:basis-[55%] xs:flex-col ss:flex-col sm:flex-col`}>
+            <p className={`${styles.head3} -rotate-90 xs:rotate-0 ss:rotate-0 sm:rotate-0 leading-[100px] xs:leading-[50px] ss:leading-[50px] sm:leading-[50px]`}>
               Partners
             </p>
             <h2 className={`${styles.heading2}`}>
-              Trusted <span className={`${styles.textGradient}`}>By Big</span>{" "}
+              Trusted <span className={`${styles.textGradient} xs:text-white `}>By Big</span>{" "}
               <span className={`${styles.textGradient}`}>Companies</span>
             </h2>
           </div>
-          <div className={`basis-[55%]`}>
+          <div className={`basis-[55%] `}>
             <p className={`text-white/[54%] xs:pt-6 ss:pt-6 sm:pt-6 `}>
               <b>Blockwhip</b> is a metaverse and blockchain development studio based in Bangalore, India. We’re a team of developers, designers, artists and visionaries who help brands step into the world of virtual & augmented reality.
             </p>
@@ -84,15 +85,18 @@ const Partners = () => {
             </div>
           </div>
         </div>
-        <div className={`${styles.flexCenter} ${styles.marginY} flex-col `}>
-          <h2 className={`${styles.heading2} text-white`}>
-            Experience a New <span className={`${styles.textGradient}`}> Dimension of Reality</span>
+        <div className={`${styles.flexCenter} flex-col `}>
+          <h2 className={`${styles.heading2} pb-8 text-center text-white`}>
+       Experience a New <span className={`${styles.textGradient}`}> Dimension of Reality</span>
           </h2>
           <div
-            className={`${styles.marginY} rounded-3xl border-secondary border-[1px] p-4 w-full`}
+            className={`${styles.marginY}  w-full`}
           >
-            <iframe src="" frameborder="0" className={``} />
-          </div>
+            <video controls className={`rounded-3xl border-secondary border-[1px]`} >
+      <source src={video1} type="video/mp4"/>
+     </video>
+            
+            </div>
           <div
             className={`flex justify-between xs:flex-col ss:flex-col w-full`}
           >
