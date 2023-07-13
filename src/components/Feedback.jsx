@@ -41,9 +41,9 @@ const Feedback = () => {
           </div>
         </div>
         <div
-          className={`${styles.marginY} xs:mb-20 rounded-3xl border-[#ffffff2b] border-[1px] p-4 w-full`}
+          className={`${styles.marginY} xs:mb-20 rounded-3xl border-[#ffffff2b] border-[1px] p-4 w-full h-[300px]`}
         >
-          <iframe src="" frameborder="0" className={``} />
+          
         </div>
       </div>
     </>
