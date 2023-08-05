@@ -3,6 +3,7 @@ import styles from "../style";
 import { motion } from "framer-motion";
 import { navVariants } from "../../utils/motion";
 import { data } from "../constants/index";
+import Marquee from "react-fast-marquee";
 
 const Services = () => {
   const [readMore, setReadMore] = useState(true);
@@ -14,17 +15,17 @@ const Services = () => {
           className={`text-white ss:text-center flex flex-row justify-between xs:flex-col ss:flex-col sm:flex-col`}
         >
           <div
-            className={`flex xs:text-center ss:text-center sm:text-center flex-row basis-[45%] md:basis-[65%] lg:basis-[60%] xl:basis-[55%] xs:flex-col ss:flex-col sm:flex-col `}
+            className={`flex relative xs:text-center ss:text-center sm:text-center flex-row basis-[45%] md:basis-[65%] lg:basis-[60%] xl:basis-[55%] xs:flex-col ss:flex-col sm:flex-col `}
           >
             <p
-              className={`${styles.head3} -rotate-90 xs:rotate-0 ss:rotate-0 sm:rotate-0 leading-[100px] xs:leading-[50px] ss:leading-[50px] sm:leading-[50px] ss:pt-6 `}
+              className={`${styles.head3}   absolute -left-10 top-14 xs:left-0 xs:right-0 xs:-top-10  ss:left-0 ss:right-0 ss:-top-10  sm:left-0 sm:right-0 sm:-top-10    -rotate-90 xs:rotate-0 ss:rotate-0 sm:rotate-0 leading-[100px] xs:leading-[50px] ss:leading-[50px] sm:leading-[50px] ss:pt-6 `}
             >
               Services
             </p>
-            <h2 className={`${styles.heading2}`}>
+            <h2 className={`${styles.heading2} pl-12 xs:pl-0 ss:pl-0 sm:pl-0`}>
               <span className={`${styles.textGradient} xs:text-white`}>
                 Discover Our
-              </span>{" "}
+              </span>
               <br />
               <span className={`${styles.textGradient}`}>Best VR Projects</span>
             </h2>
@@ -46,14 +47,24 @@ const Services = () => {
         {/* ---------------------------------------------------------------- */}
         <div>
           <div
-            className={`carousel carousel-center px-0   ${styles.paddingY} w-full text-white`}
+            className={` px-0   ${styles.paddingY} w-full h-full text-white`}
           >
+          <Marquee
+          style={{
+            paddingTop:"30px",  
+            paddingBottom:"30px",  
+          }}>
             {data.map((read) => (
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 transition={{ delay: 0.1, duration: 0.3 }}
-                className={`${styles.serviceBox} carousel-item flex flex-col  p-8  xs:my-4 ss:my-6 sm:my-6 md:my-6 w-[26%] lg:w-[27%] sm:w-[38%] ss:w-[87%] xs:w-[75%] mx-4`}
+                className={`${styles.serviceBox} flex flex-col items-start p-8 mx-4 w-[440px] h-full `}
               >
+              {/* <motion.div
+                whileHover={{ scale: 1.05 }}
+                transition={{ delay: 0.1, duration: 0.3 }}
+                className={`${styles.serviceBox} flex flex-col  p-8  xs:my-4 ss:my-6 sm:my-6 md:my-6 w-[26%] lg:w-[27%] sm:w-[38%] ss:w-[87%] xs:w-[75%] mx-4`}
+              > */}
                 <iframe
                   className={`w-full rounded-[1rem]`}
                   src={read.video}
@@ -64,15 +75,14 @@ const Services = () => {
                 ></iframe>
                 <div className={`text-white my-6 xs:text-center xs:mb-0`}>
                   <h3 className={`{styles.text1}  text-[20px] font-semibold`}>
-                    {" "}
-                    {read.title}{" "}
+                  {read.title}
                   </h3>
                   <p className={`${styles.paragraph} py-2`}>
                     {readMore ? `${read.paraLess}` : `${read.para}`}{" "}
                   </p>
                 </div>
               </motion.div>
-            ))}
+            ))}</Marquee>
           </div>
           <div className={`flex justify-end xs:justify-center`}>
             <motion.button

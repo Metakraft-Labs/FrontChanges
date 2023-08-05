@@ -11,14 +11,14 @@ const Feedback = () => {
           className={`text-white pt-14 xs:text-center ss:text-center sm:text-center flex flex-row justify-between xs:flex-col ss:flex-col sm:flex-col`}
         >
           <div
-            className={`flex flex-row basis-[45%] md:basis-[65%] lg:basis-[60%] xl:basis-[55%] xs:flex-col ss:flex-col sm:flex-col`}
+            className={`flex relative flex-row basis-[45%] md:basis-[65%] lg:basis-[60%] xl:basis-[55%] xs:flex-col ss:flex-col sm:flex-col`}
           >
             <p
-              className={`${styles.head3} -rotate-90 xs:rotate-0 ss:rotate-0 sm:rotate-0 leading-[100px] xs:leading-[50px] ss:leading-[50px] sm:leading-[50px] ss:pt-6 `}
+              className={`${styles.head3}  absolute -left-10 top-14 xs:left-0 xs:right-0 xs:-top-10  ss:left-0 ss:right-0 ss:-top-10  sm:left-0 sm:right-0 sm:-top-10   -rotate-90 xs:rotate-0 ss:rotate-0 sm:rotate-0 leading-[100px] xs:leading-[50px] ss:leading-[50px] sm:leading-[50px] ss:pt-6 `}
             >
               Feedback
             </p>
-            <h2 className={`${styles.heading2}`}>
+            <h2 className={`${styles.heading2} pl-12 xs:pl-0 ss:pl-0 sm:pl-0`}>
               <span className={`${styles.textGradient} xs:text-white`}>
                 Real Feedback
               </span>{" "}
