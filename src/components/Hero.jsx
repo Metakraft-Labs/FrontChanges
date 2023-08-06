@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { navVariants } from "../../utils/motion";
 import styles from "../style";
-import heroImage from "../assets/heroImage.png";
+import heroImage1 from "../assets/heroImage1.png";
 import heroBg from "../assets/heroBg.png";
 
 const Hero = () => {
@@ -72,9 +72,9 @@ const Hero = () => {
               ease: "easeOut",
             },
           }}
-          src={heroImage}
+          src={heroImage1}
           alt="hero image"
-          className="absolute w-[730px] lg:w-[590px] md:w-[550px] ss:w-[580px] xs:w-[280px] pl-20 px-8  xs:px-2"
+          className="absolute w-[830px] lg:w-[690px] md:w-[650px] ss:w-[680px] xs:w-[380px] pl-20 px-8  xs:px-2"
         />
       </div>
     </section>

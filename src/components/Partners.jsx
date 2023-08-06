@@ -20,14 +20,14 @@ const Partners = () => {
           className={`text-white ${styles.flexCenter} xs:text-center ss:text-center sm:text-center xs:flex-col ss:flex-col sm:flex-col`}
         >
           <div
-            className={`flex flex-row basis-[45%] sm:basis-[100%] md:basis-[100%] lg:basis-[60%] xl:basis-[55%] xs:flex-col ss:flex-col sm:flex-col`}
+            className={`flex flex-row relative basis-[45%] sm:basis-[100%] md:basis-[100%] lg:basis-[60%] xl:basis-[55%] xs:flex-col ss:flex-col sm:flex-col xs:mt-14 `}
           >
             <p
-              className={`${styles.head3} -rotate-90 xs:rotate-0 ss:rotate-0 sm:rotate-0 leading-[100px] xs:leading-[50px] ss:leading-[50px] sm:leading-[50px]`}
+              className={`${styles.head3} absolute -left-10 top-14 xs:left-0 xs:right-0 xs:-top-10  ss:left-0 ss:right-0 ss:-top-10  sm:left-0 sm:right-0 sm:-top-10   -rotate-90 xs:rotate-0 ss:rotate-0 sm:rotate-0 leading-[100px] xs:leading-[50px] ss:leading-[50px] sm:leading-[50px]`}
             >
               Partners
             </p>
-            <h2 className={`${styles.heading2}`}>
+            <h2 className={`${styles.heading2} pl-12 xs:pl-0 ss:pl-0 sm:pl-0`}>
               Trusted{" "}
               <span className={`${styles.textGradient} xs:text-white `}>
                 By Big
@@ -99,41 +99,27 @@ const Partners = () => {
         </div>
         <div className={`${styles.flexCenter} flex-col `}>
           <h2 className={`${styles.heading2} pb-8 text-center text-white`}>
-            Experience a New{" "}
+            Experience a New
             <span className={`${styles.textGradient}`}>
-              {" "}
+  
               Dimension of Reality
             </span>
           </h2>
           <div className={`${styles.marginY}  w-full`}>
-            <video
-              controls
-              className={`rounded-3xl border-secondary border-[1px]`}
-            >
-              <source src={video1} type="video/mp4" />
-            </video>
+            <video  src={video1} type="video/mp4" className={`rounded-3xl border-secondary border-[1px]`}
+              autoplay loop
+            ></video>
           </div>
           <div
             className={`flex justify-between xs:flex-col ss:flex-col w-full`}
           >
             <div className={`${styles.flexCenter} xs:flex-col`}>
-              <div className={`xs:mb-4`}>
-                <h3
-                  className={`text-white text-[250%] font-bold ${styles.flexStart}`}
-                >
-                  98{" "}
-                  <span className={`text-secondary pl-2 text-[20px]`}>%</span>
-                </h3>
-
-                <p className={`${styles.paragraph} text-white/70`}>
-                  Satisfied Clients
-                </p>
-              </div>
+              
               <div className={`mx-12 xs:mb-4`}>
                 <h3
                   className={`text-white text-[250%] font-bold ${styles.flexStart}`}
                 >
-                  98{" "}
+                  98
                   <span className={`text-secondary pl-2  text-[20px] `}>%</span>
                 </h3>
                 <p className={`${styles.paragraph} text-white/70`}>
