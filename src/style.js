@@ -5,7 +5,7 @@ const styles = {
     "text-[64px] xs:text-[32px] ss:text-[54px] sm:text-[58px] md:text-[60px] font-Manrope font-bold leading-[70.4px] xs:leading-[42px] w-full",
   head3:
     "text-secondary font-Manrope font-[18px] font-semibold leading-[18px] tracking-[3px] uppercase",
-  text1: " font-Manrope font-bold",
+  text1: " font-Manrope font-bold ",
   linkText: "text-[20px] font-Manrope font-medium leading-[16px]",
   paragraph: "text-grey text-[16px] font-Heebo font-normal leading-[24px]",
   button:

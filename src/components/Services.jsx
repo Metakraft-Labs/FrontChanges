@@ -18,7 +18,7 @@ const Services = () => {
             className={`flex relative xs:text-center ss:text-center sm:text-center flex-row basis-[45%] md:basis-[65%] lg:basis-[60%] xl:basis-[55%] xs:flex-col ss:flex-col sm:flex-col `}
           >
             <p
-              className={`${styles.head3}   absolute -left-10 top-14 xs:left-0 xs:right-0 xs:-top-10  ss:left-0 ss:right-0 ss:-top-10  sm:left-0 sm:right-0 sm:-top-10    -rotate-90 xs:rotate-0 ss:rotate-0 sm:rotate-0 leading-[100px] xs:leading-[50px] ss:leading-[50px] sm:leading-[50px] ss:pt-6 `}
+              className={`${styles.head3}   absolute -left-10 top-14  xs:left-0 xs:right-0 xs:-top-10  ss:left-0 ss:right-0 ss:-top-10  sm:left-0 sm:right-0 sm:-top-10    -rotate-90 xs:rotate-0 ss:rotate-0 sm:rotate-0 leading-[100px] xs:leading-[50px] ss:leading-[50px] sm:leading-[50px] ss:pt-6 `}
             >
               Services
             </p>

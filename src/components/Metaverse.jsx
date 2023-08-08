@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../style";
 import metaImage1 from "../assets/metaImage1.png";
 import metaImage2 from "../assets/metaImage2.png";
-
+import metaVideo from "../assets/metaVideo.mp4";
 const Metaverse = () => {
   return (
     <>
@@ -22,8 +22,10 @@ const Metaverse = () => {
               engagement and conversions.
             </p>
           </div>
-          <div className={`${styles.flexCenter} pt-14`}>
-            <img src={metaImage1} alt="" className={``} />
+          <div className={`${styles.flexCenter} pt-14 xl:px-24 `}>
+            
+              <video src={metaVideo} autoplay loop type="video/mp4" className="w-full h-full rounded-[34px]"></video>
+            {/* <img src={metaImage1} alt="" className={``} /> */}
           </div>
         </div>
         <div className={`${styles.paddingY} xs:pt-24 ss:pt-24 sm:pt-28 pt-28`}>
